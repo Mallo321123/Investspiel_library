@@ -2,7 +2,11 @@ LICENSE
 README.md
 setup.py
 investspielapi/__init__.py
-investspielapi/myfunctions.py
+investspielapi/buy.py
+investspielapi/calc.py
+investspielapi/config.py
+investspielapi/read.py
+investspielapi/sell.py
 investspielapi.egg-info/PKG-INFO
 investspielapi.egg-info/SOURCES.txt
 investspielapi.egg-info/dependency_links.txt
