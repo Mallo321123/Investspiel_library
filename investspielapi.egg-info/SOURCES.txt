@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+investspielapi/__init__.py
+investspielapi/myfunctions.py
+investspielapi.egg-info/PKG-INFO
+investspielapi.egg-info/SOURCES.txt
+investspielapi.egg-info/dependency_links.txt
+investspielapi.egg-info/top_level.txt
