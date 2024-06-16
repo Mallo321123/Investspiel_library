@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Built Library
+.pytest_cache
+build
+dist
+investspielapi.egg-info
+
 # C extensions
 *.so
 

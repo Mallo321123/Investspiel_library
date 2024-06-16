@@ -14,3 +14,6 @@ investspielapi.egg-info/SOURCES.txt
 investspielapi.egg-info/dependency_links.txt
 investspielapi.egg-info/requires.txt
 investspielapi.egg-info/top_level.txt
+investspielapi/config/generall.conf
+investspielapi/config/stock.conf
+investspielapi/config/trade.conf
