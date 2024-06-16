@@ -1,5 +1,7 @@
 LICENSE
+MANIFEST.in
 README.md
+requirements.txt
 setup.py
 investspielapi/__init__.py
 investspielapi/buy.py
@@ -10,4 +12,5 @@ investspielapi/sell.py
 investspielapi.egg-info/PKG-INFO
 investspielapi.egg-info/SOURCES.txt
 investspielapi.egg-info/dependency_links.txt
+investspielapi.egg-info/requires.txt
 investspielapi.egg-info/top_level.txt
