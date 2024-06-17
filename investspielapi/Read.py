@@ -1,23 +1,20 @@
 import requests
-import configparser
 
 class Read:
     def __init__(self, config):
-        self.trade_config = configparser.ConfigParser()
-        self.trade_config.read('config/trade.conf')
-        self.stock_config = configparser.ConfigParser()
-        self.stock_config.read('config/stock.conf')
-        self.generall_config = configparser.ConfigParser()
-        self.generall_config.read('config/generall.conf')
+        self.trade_config = config.trade_config
+        self.stock_config = config.stock_config
+        self.generall_config = config.generall_config
         
         self.portfolioid = config.portfolioid
         self.cookie = config.cookie
+        self.cookie_full = config.cookie_full
     
     def chart(self, name, time_range):
         url = self.stock_config[name][time_range]
         response = requests.get(url)
         response.raise_for_status()
-        return response.json()
+        return(response.json())
     
     def price(self, name):
         url = self.generall_config["get"]["url1"] + self.portfolioid + self.generall_config["get"]["url2"] + self.trade_config[name]["type"] + self.generall_config["get"]["url3"] + self.trade_config[name]["ticker"]
@@ -26,8 +23,10 @@ class Read:
         
         if response.status_code != 200:
             print(f"Fehler beim Abrufen der Daten: {response.status_code}")
+            
+        Json = response.json()
         
-        return(response.json("StockRateInGameCurrency"))
+        return(Json["StockRateInGameCurrency"])
     
     def ballance(self):
         name = self.generall_config["get"]["example"]
@@ -37,8 +36,10 @@ class Read:
         
         if response.status_code != 200:
             print(f"Fehler beim Abrufen der Daten: {response.status_code}")
+            
+        Json = response.json()
         
-        return(response.json["Bankroll"])
+        return(Json["Bankroll"])
     
     def tax(self,name):
         url = self.generall_config["get"]["url1"] + self.portfolioid + self.generall_config["get"]["url2"] + self.trade_config[name]["type"] + self.generall_config["get"]["url3"] + self.trade_config[name]["ticker"]
@@ -59,5 +60,7 @@ class Read:
         
         if response.status_code != 200:
             print(f"Fehler beim Abrufen der Daten: {response.status_code}")
+            
+        Json = response.json()
         
-        return(response.json("CurrentStockQuantity"))
+        return(Json["CurrentStockQuantity"])
