@@ -17,3 +17,4 @@ investspielapi.egg-info/top_level.txt
 investspielapi/config/generall.conf
 investspielapi/config/stock.conf
 investspielapi/config/trade.conf
+tests/test_read.py

@@ -4,11 +4,11 @@ import configparser
 class read:
     def __init__(self, config):
         self.trade_config = configparser.ConfigParser()
-        self.trade_config.read('trade.conf')
+        self.trade_config.read('config/trade.conf')
         self.stock_config = configparser.ConfigParser()
-        self.stock_config.read('stock.conf')
+        self.stock_config.read('config/stock.conf')
         self.generall_config = configparser.ConfigParser()
-        self.generall_config.read('generall.conf')
+        self.generall_config.read('config/generall.conf')
         
         self.portfolioid = config.portfolioid
         self.cookie = config.cookie
