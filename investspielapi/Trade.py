@@ -74,7 +74,7 @@ class Trade:
             'BuyWithAmount': money,
         })
         
-        
+     
     def calc_price(self, name, count):
         price = self.price(name)
         value = price * count
