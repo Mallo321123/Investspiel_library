@@ -178,3 +178,4 @@ cython_debug/
 tests/__pycache__/test_myfunctions.cpython-310-PYTEST.pyc
 tests/__pycache__/test_read.cpython-310-PYTEST.pyc
 tests/__pycache__/test_myfunctions.cpython-310-PYTEST.pyc
+.vscode/settings.json
