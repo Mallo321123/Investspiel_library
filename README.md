@@ -52,7 +52,7 @@ Man kann auch dinge wie kontostand oder besitz einer aktie auslesen
 
    um sich die config zu gennerieren, braucht man nur vollgende zeile einfügen:
 ```
-   conf = Config(cookieconsent, ssid, cookie, "**acountid**")
+   conf = Config(ssid, cookie, "**acountid**")
 ```
    hierbei sollte man cookieconsent und ssid durch den CookieConsent und die EQSESSID ersetzten
 
