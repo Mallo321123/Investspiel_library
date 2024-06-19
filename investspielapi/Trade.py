@@ -32,7 +32,6 @@ class Trade:
         response.raise_for_status()
         return response
   
-  
     def sell_count(self, amount, name):
         if amount > self.owned(name):
             raise RuntimeError("not enouth in stock")
@@ -53,7 +52,6 @@ class Trade:
         return self._buy_or_sell(name, {
             'SellQuantity': amount,
         })
-
 
     def buy_price(self, money, name):
         if money > self.ballance():

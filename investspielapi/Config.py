@@ -2,11 +2,11 @@ import configparser
 import pkg_resources
 
 class Config:
-    def __init__(self, cookieconsent, ssid, cookie, portfolioid):
+    def __init__(self, ssid, cookie, portfolioid):
         self.portfolioid = portfolioid
         self.cookie_full = cookie
         self.cookie = {
-            "CookieConsent": str(cookieconsent),
+
             "EQSESSID": str(ssid)
         }
 
